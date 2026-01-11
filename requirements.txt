@@ -1,22 +1,32 @@
 # MyAnus Platform Dependencies
+# Updated with compatible versions to fix deployment errors
 
 # Core Framework
-streamlit==1.31.0
+streamlit==1.40.0
 
-# LangChain & LangGraph
-langchain==0.1.9
-langchain-openai==0.0.5
-langgraph==0.0.20
-langgraph-checkpoint-postgres==1.0.2
+# LangChain & LangGraph (Compatible versions)
+langchain==0.3.13
+langchain-openai==0.2.14
+langchain-community==0.3.13
+langchain-core==0.3.28
+langgraph==0.2.59
+langgraph-checkpoint-postgres==2.0.10
 
 # Database
-psycopg[binary]==3.1.18
-psycopg-pool==3.2.1
-supabase==2.3.4
+psycopg[binary,pool]==3.2.3
+supabase==2.10.0
 
 # Code Execution
-e2b-code-interpreter==0.0.8
+e2b-code-interpreter==1.0.4
+
+# OpenAI
+openai==1.58.1
 
 # Utilities
 python-dotenv==1.0.1
-pydantic==2.6.1
+pydantic==2.10.4
+pydantic-settings==2.7.0
+
+# Additional dependencies
+httpx==0.28.1
+typing-extensions==4.12.2
